@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.haider.tictactoe.HardActivity">
+
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:background="@drawable/ticbackground1"
+        android:fontFamily="sans-serif-medium"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="10dp">
+
+        <TextView
+            android:id="@+id/signin_name"
+            android:layout_width="115dp"
+            android:layout_height="23dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:text="Signed in as : "
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+
+        <TextView
+            android:id="@+id/dialogue"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/signin_name"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:text="Tap to start"
+            android:textSize="36px"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="52dp" />
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="300dp"
+            android:layout_height="350dp"
+            android:layout_below="@+id/dialogue"
+            android:layout_centerHorizontal="true"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="145dp">
+
+            <Button
+                android:id="@+id/one"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_alignParentRight="true"
+
+                android:layout_marginLeft="5px"
+                android:layout_marginTop="15dp"
+                android:text=" "
+                android:textSize="70px" />
+
+            <Button
+                android:id="@+id/two"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_alignTop="@id/one"
+                android:layout_marginLeft="5px"
+                android:layout_toLeftOf="@id/one"
+                android:text=" "
+                android:textSize="70px" />
+
+            <Button
+                android:id="@+id/three"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_alignTop="@id/two"
+                android:layout_marginLeft="5px"
+                android:layout_toLeftOf="@id/two"
+                android:padding="0px"
+                android:text=" "
+                android:textSize="70px" />
+
+            <Button
+                android:id="@+id/four"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/one"
+                android:layout_marginLeft="5px"
+                android:text=" "
+                android:textSize="70px" />
+
+            <Button
+                android:id="@+id/five"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_alignLeft="@+id/two"
+                android:layout_alignStart="@+id/two"
+                android:layout_below="@+id/two"
+                android:text=" "
+                android:textSize="70px" />
+
+            <Button
+                android:id="@+id/six"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_alignTop="@id/five"
+                android:layout_marginLeft="5px"
+                android:layout_toLeftOf="@id/five"
+                android:text=" "
+                android:textSize="70px" />
+
+            <Button
+                android:id="@+id/seven"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/four"
+                android:layout_marginLeft="5px"
+                android:text=" "
+                android:textSize="70px" />
+
+            <Button
+                android:id="@+id/eight"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_alignTop="@id/seven"
+                android:layout_marginLeft="5px"
+                android:layout_toLeftOf="@id/seven"
+                android:text=" "
+                android:textSize="70px" />
+
+            <Button
+                android:id="@+id/nine"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_alignLeft="@+id/six"
+                android:layout_alignStart="@+id/six"
+                android:layout_alignTop="@id/eight"
+                android:layout_toLeftOf="@id/eight"
+                android:text=" "
+                android:textSize="70px" />
+
+
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/restart_btn"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_alignEnd="@+id/relativeLayout"
+            android:layout_alignRight="@+id/relativeLayout"
+            android:layout_below="@+id/relativeLayout"
+            android:background="@drawable/restartimg"
+            tools:layout_editor_absoluteX="254dp"
+            tools:layout_editor_absoluteY="447dp" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.haider.tictactoe.SinglePlayerBot">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="520dp"
+        android:background="@drawable/ticbackground1"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="4dp">
+
+        <GridView
+            android:id="@+id/gamegrid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:numColumns="3"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="35dp"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="17dp" />
+
+        <TextView
+            android:id="@+id/nametxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/name"
+            android:layout_alignBottom="@+id/name"
+            android:layout_marginLeft="33dp"
+            android:layout_marginStart="33dp"
+            android:layout_toEndOf="@+id/name"
+            android:layout_toRightOf="@+id/name" />
+
+        <Button
+            android:id="@+id/restartgame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/name"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/name"
+            android:layout_marginBottom="13dp"
+            android:text="Restart" />
+
+        <TextView
+            android:id="@+id/played"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Games played : "
+            android:layout_alignBaseline="@+id/nametxt"
+            android:layout_alignBottom="@+id/nametxt"
+            android:layout_toRightOf="@+id/restartgame"
+            android:layout_toEndOf="@+id/restartgame"
+            android:layout_marginLeft="58dp"
+            android:layout_marginStart="58dp" />
+
+        <TextView
+            android:id="@+id/gamenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/played"
+            android:layout_alignBottom="@+id/played"
+            android:layout_toEndOf="@+id/played"
+            android:layout_toRightOf="@+id/played" />
+
+
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
